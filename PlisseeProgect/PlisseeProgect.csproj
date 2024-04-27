@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B38CD3F4-47B1-47F4-A459-DC74C37B697F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PlisseeProgect</RootNamespace>
+    <AssemblyName>PlisseeProgect</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bll\City.cs" />
+    <Compile Include="Bll\CityDB.cs" />
+    <Compile Include="Bll\Company.cs" />
+    <Compile Include="Bll\CompanyDB.cs" />
+    <Compile Include="Bll\Customer.cs" />
+    <Compile Include="Bll\CustomerDB.cs" />
+    <Compile Include="Bll\DetailPaymentsDB.cs" />
+    <Compile Include="Bll\DetailPayments.cs" />
+    <Compile Include="Bll\GenerlDB.cs" />
+    <Compile Include="Bll\Institution.cs" />
+    <Compile Include="Bll\InstitutionDB.cs" />
+    <Compile Include="Bll\InstitutionProduct.cs" />
+    <Compile Include="Bll\InstitutionProductDB.cs" />
+    <Compile Include="Bll\Length.cs" />
+    <Compile Include="Bll\LengthDB.cs" />
+    <Compile Include="Bll\ProductModels.cs" />
+    <Compile Include="Bll\ProductModelsDB.cs" />
+    <Compile Include="Bll\OrderDetail.cs" />
+    <Compile Include="Bll\OrderDetailDB.cs" />
+    <Compile Include="Bll\Payments.cs" />
+    <Compile Include="Bll\PaymentsDB.cs" />
+    <Compile Include="Bll\ProductSize.cs" />
+    <Compile Include="Bll\ProductSizeDB.cs" />
+    <Compile Include="Bll\ProductType.cs" />
+    <Compile Include="Bll\ProductTypeDB.cs" />
+    <Compile Include="Bll\Sale.cs" />
+    <Compile Include="Bll\SaleDB.cs" />
+    <Compile Include="Bll\SaleDetail.cs" />
+    <Compile Include="Bll\SaleDetailDB.cs" />
+    <Compile Include="Bll\Size.cs" />
+    <Compile Include="Bll\SizeDB.cs" />
+    <Compile Include="Bll\Supplier.cs" />
+    <Compile Include="Bll\SupplierDB.cs" />
+    <Compile Include="Bll\SuppliersOrder.cs" />
+    <Compile Include="Bll\SuppliersOrderDB.cs" />
+    <Compile Include="Bll\Validation.cs" />
+    <Compile Include="btn_home.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btn_home.Designer.cs">
+      <DependentUpon>btn_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\Dal.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FormCode.Designer.cs">
+      <DependentUpon>FormCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormOneSupplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\FormOneSupplier.Designer.cs">
+      <DependentUpon>FormOneSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormSupplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\FormSupplier.Designer.cs">
+      <DependentUpon>FormSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UserAllSizeLength.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UserAllSizeLength.Designer.cs">
+      <DependentUpon>UserAllSizeLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UserCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UserCustomer.Designer.cs">
+      <DependentUpon>UserCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UserManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UserManagement.Designer.cs">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UserOrders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UserOrders.Designer.cs">
+      <DependentUpon>UserOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UserOrdersArriving.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UserOrdersArriving.Designer.cs">
+      <DependentUpon>UserOrdersArriving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UserProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UserProducts.Designer.cs">
+      <DependentUpon>UserProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UserProduct_s_l.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UserProduct_s_l.Designer.cs">
+      <DependentUpon>UserProduct_s_l.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UserReturnProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UserReturnProduct.Designer.cs">
+      <DependentUpon>UserReturnProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UserSale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UserSale.Designer.cs">
+      <DependentUpon>UserSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UserSingleCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UserSingleCustomer.Designer.cs">
+      <DependentUpon>UserSingleCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UserSiseLength.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\UserSiseLength.Designer.cs">
+      <DependentUpon>UserSiseLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lab_home.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="lab_home.Designer.cs">
+      <DependentUpon>lab_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="btn_home.resx">
+      <DependentUpon>btn_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormCode.resx">
+      <DependentUpon>FormCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormOneSupplier.resx">
+      <DependentUpon>FormOneSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FormSupplier.resx">
+      <DependentUpon>FormSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UserAllSizeLength.resx">
+      <DependentUpon>UserAllSizeLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UserCustomer.resx">
+      <DependentUpon>UserCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UserManagement.resx">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UserOrders.resx">
+      <DependentUpon>UserOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UserOrdersArriving.resx">
+      <DependentUpon>UserOrdersArriving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UserProducts.resx">
+      <DependentUpon>UserProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UserProduct_s_l.resx">
+      <DependentUpon>UserProduct_s_l.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UserReturnProduct.resx">
+      <DependentUpon>UserReturnProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UserSale.resx">
+      <DependentUpon>UserSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UserSingleCustomer.resx">
+      <DependentUpon>UserSingleCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UserSiseLength.resx">
+      <DependentUpon>UserSiseLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lab_home.resx">
+      <DependentUpon>lab_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\פליסה-לוגו רקע שקוף PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
