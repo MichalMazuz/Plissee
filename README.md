@@ -7,15 +7,15 @@
 4.	עזרה במעקב אחר הקניות והתשלומים.
 5.	סיוע בניהול הספקים והזמנות מספקים.
 6.	המערכת לא מטפלת בחישוב משכורות עובדים.
-https://github.com/MichalMazuz/Plissee/assets/144708445/8dc6bf7e-9389-4fb5-8921-af42e84d15da
+![image](https://github.com/MichalMazuz/Plissee/assets/144708445/8dc6bf7e-9389-4fb5-8921-af42e84d15da)
 
-(https://github.com/MichalMazuz/Plissee/assets/144708445/0d561b9e-29e9-441a-9acd-2e6159910b95)
+![image](https://github.com/MichalMazuz/Plissee/assets/144708445/0d561b9e-29e9-441a-9acd-2e6159910b95)
 
-(https://github.com/MichalMazuz/Plissee/assets/144708445/fbf33ef4-771f-4e35-be1f-1fc0e9be6fec)
+![image](https://github.com/MichalMazuz/Plissee/assets/144708445/fbf33ef4-771f-4e35-be1f-1fc0e9be6fec)
 
-(https://github.com/MichalMazuz/Plissee/assets/144708445/a54ed456-70f8-4551-9685-f7e7f7af9b14)
+![image](https://github.com/MichalMazuz/Plissee/assets/144708445/a54ed456-70f8-4551-9685-f7e7f7af9b14)
 
-(https://github.com/MichalMazuz/Plissee/assets/144708445/2005f83b-5977-4ec6-854e-2700ce59f84b)
+![image](https://github.com/MichalMazuz/Plissee/assets/144708445/2005f83b-5977-4ec6-854e-2700ce59f84b)
 ![image](https://github.com/MichalMazuz/Plissee/assets/144708445/6e541fe2-05a8-4208-a501-600a867bbc20)
 ![image](https://github.com/MichalMazuz/Plissee/assets/144708445/8e76a770-123b-4cd1-a466-025b4eea6db4)
 ![image](https://github.com/MichalMazuz/Plissee/assets/144708445/69b4cfc4-040e-4bf9-a43f-41cb4e37051d)
